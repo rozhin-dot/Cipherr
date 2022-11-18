@@ -1,0 +1,236 @@
+
+
+
+
+body {
+    padding: 50px 0;
+    margin: 0;
+    background-color: #eee;
+    font-family: consolas, monospace;
+  }
+  
+  .container {
+    background: white;
+    max-width: 300px;
+    position: absolute;
+    left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 3px 3px 6px rgba(0,0,0,0.24);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .subheader {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .color-red {
+    color: red;
+  }
+  
+  .color-blue {
+    color: blue;
+  }
+
+  /*/////////////////////////////////////////////////////////////////*/
+
+  /*Affine Cipher*/
+
+
+#d2{
+
+    background: white;
+    height: 585px;
+    max-width: 300px;
+    position: absolute;
+    left: 370px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 3px 3px 6px rgba(0,0,0,0.24);
+}
+textarea{
+  font-size: 15px;
+  width: 250px;
+  height: 60px;
+}
+#in1{
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background-color:blue;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+
+}
+#in2{
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background-color:red;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+#in2:hover{
+    
+    background-color:aliceblue;
+    color:red;
+}
+#in1:hover{
+    
+    background-color:aliceblue;
+    color:blue;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/* Vigenere Cipher*/
+
+
+
+
+#container2{
+    background: white;
+    height: 585px;
+    max-width: 300px;
+    position: absolute;
+    left: 680px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 3px 3px 6px rgba(0,0,0,0.24);
+}
+
+textarea{
+    font-size: 15px;
+    width: 250px;
+    height: 60px;
+}
+#btn-encript{
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color:blue;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+#btn-decript{
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color:red;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+#btn-encript:hover{
+    background-color:beige;
+    color:blue;
+}
+#btn-decript:hover{
+    background-color:beige;
+    color: red;
+}
+  
+  input {
+    padding: 0.5rem;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-input {
+    min-width: 50%;
+  }
+  
+  .cipher-output {
+    min-height: 38px;
+    border-left: 10px solid;
+    padding-left: 15px;
+  }
+  .h{
+    text-align:left ;
+     color:red;
+     text-transform: uppercase;
+     font-size: 14px;
+  }
+  .h11{
+    text-align:left ;
+     color:blue;
+     text-transform: uppercase;
+     font-size: 14px;
+  }
+
+  /*//////////////////////////////////////////////////////////*/
+
+  /*  Colum Transport Cipher */
+ 
+  #cont4{
+    background: white;
+    height: 590px;
+    max-width: 300px;
+    position: absolute;
+    left: 990px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 3px 3px 6px rgba(0,0,0,0.24);
+}
+#bbb{
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  background-color:blue;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+#pa{
+    text-align: left; color:black;
+}
+#bba{
+  border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color:red;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer; 
+}
+#bbb:hover{
+  background-color:beige;
+    color:blue;
+}
+.tex{
+    font-size: 15px;
+    width: 250px;
+    height: 60px;
+}
+#bba:hover{
+  background-color:beige;
+  color: red;
+}
+.aa{
+  text-align:left ;
+  color:red;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+.al{
+
+  text-align:left ;
+     color:blue;
+     text-transform: uppercase;
+     font-size: 14px;
+}

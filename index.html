@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Style.css">
+  <title>Document</title>
+</head>
+<body>
+     <!-- Caser Cipher-->
+  <div class="container">
+    <h1 class="text-center">Caesar Cipher</h1>
+    <h2 class="subheader color-red">Encrypt</h2>
+    <p>Enter a phrase and a key between 0-25 to cipher your message.</p>
+    <input id="userEncodeInput" class="user-input" type="text"/>
+    <input id="cipherEncodeKey" type="number" min="0" max="25" value="0" />
+    <h1 class="cipher-output color-red" id="cipherEncodeOutput"></h1>
+    <hr>
+    <h2 class="subheader color-blue">Decrypt</h2>
+    <p>Enter an encoded phrase and the key used to decipher your message.</p>
+    <input id="userDecodeInput" class="user-input" type="text"/>
+    <input id="cipherDecodeKey" type="number" min="0" max="25" value="0" />
+    <h1 class="cipher-output color-blue" id="cipherDecodeOutput"></h1>
+  </div>
+ <!--////////////////////////////////////////////////////////////////////////////-->
+
+ <!-- Affine Cipher-->
+
+ 
+    <div id="d2">
+        <h1 ><i>Affine Cipher </i> </h1><br>
+    <form><h3 class="h" > Decrypt Text</h3><p style="text-align: left; color:black">your decrepted text here</p> 
+  <textarea name="p" rows="4" cols="50" wrap="soft"></textarea><br> 
+  <p>a =
+  <select name="mult" size="1"> 
+  <option>1</option> 
+  <option>3</option> 
+  <option>5</option> 
+  <option>7</option> 
+  <option>9</option> 
+  <option>11</option> 
+  <option>15</option> 
+  <option>17</option> 
+  <option>19</option> 
+  <option>21</option> 
+  <option>23</option> 
+  <option>25</option> 
+  </select> 
+b =
+  <select name="add" size="1"> 
+  <option>0</option> 
+  <option>1</option> 
+  <option>2</option> 
+  <option>3</option> 
+  <option>4</option> 
+  <option>5</option> 
+  <option>6</option> 
+  <option>7</option> 
+  <option>8</option> 
+  <option>9</option> 
+  <option>10</option> 
+  <option>11</option> 
+  <option>12</option> 
+  <option>13</option> 
+  <option>14</option> 
+  <option>15</option> 
+  <option>16</option> 
+  <option>17</option> 
+  <option>18</option> 
+  <option>19</option> 
+  <option>20</option> 
+  <option>21</option> 
+  <option>22</option> 
+  <option>23</option> 
+  <option>24</option> 
+  <option>25</option> 
+  </select> 
+  </p> <br>
+  <p><input id="in1" name="btnEn" value="v Encrypt v" onclick="Encrypt(this.form)" type="button"> 
+  <input id="in2" name="btnDe" value="^ Decrypt ^" onclick="Decrypt(this.form)" type="button"></p>
+  <p><h3 class="h11"> Encrypt Text</h3><p style="text-align: left; color:black">your encrepted text here</p> 
+  <textarea name="c" rows="4" cols="50" wrap="soft"></textarea> </p> 
+</form></div>
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--Vigenere Cipher-->
+
+<div class="container3">  
+    
+    <div id="container2">
+        <h1><i>Vigenere Cipher</i></h1><br>
+    <form class="form-horizontal" id="encript">
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="key"><h3 style="text-align: left;text-transform: uppercase; font-size: 16px;"><b>The encription key</b> </h3></label>
+        <div class="col-sm-10">
+          <input style="width:200px ;" class="form-control" type="text" id="key" size="50" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class=" col-sm-2 control-label" for="palintext"> <h3 class="h">Decrypt Text</h3> </label><p style="text-align: left; color:black">your encrepted text here</p> 
+        <div class="col-sm-10">
+          <textarea class="form-control" id="palintext" cols="50" rows="5"></textarea>
+        </div>    
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-primary" id="btn-encript" type="button">Encrypt</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class=" h11 col-sm-2 control-label" for="encryptedtext"><h3 class="h11">Encrypted Text</h3></label><p style="text-align: left; color:black">your encrepted text here</p> 
+        <div class="col-sm-10">
+          <textarea class="form-control" id="encryptedtext" cols="50" rows="5"></textarea>
+        </div>    
+      </div>
+      <div class="form-group">       
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-danger" id="btn-decript" type="button">Decrypt</button>
+        </div>
+      </div>
+    </form>
+</div>
+</div>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Colum Transport Cipher-->
+  <div id="cont4">
+        
+        <h1><i>Colum Transposition Cipher</i></h1>
+    
+    
+        <p><h3  class="aa">Decrypted Text</h3><p id="pa">your encrepted text here</p> 
+            <textarea id="p" class="tex" name="p" rows="4" cols="50">attack at dawn</textarea>
+            </p>
+            <p>
+                keyword = <input id="key" name="key" size="10" value="zebra" type="text" /><br>
+                pad character = <input id="pc" name="pc" size="1" value="x" type="text" />
+            </p>
+            <p>
+                <input type="button" id="bbb" name="btnEn" value="v Encrypt v" onclick="handleEncrypt()" />
+                <input type="button" id="bba"  name="btnDe" value="^ Decrypt ^" onclick="handleDecrypt()" />
+            </p>
+            <p><h3 class="al">Encrypted Text</h3><p id="pa">your encrepted text here</p>
+                <textarea class="tex" id="c" name="c" rows="4" cols="50"></textarea>
+            </p></div>
+
+  <script src="./Script.JS"></script>
+</body>
+</html>
